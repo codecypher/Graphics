@@ -1,13 +1,53 @@
-# Visual Studio Setup
+# Visual Studio OpenGL Starer Project
+
+This repo is a Visual Studio 2019 starter project using OpenGL libraries (GL/GLU/GLUT) including glutdlls37beta.
+
+All the header, DLL, and lib files are local to the project.
+
+----------
+
+## Visual Studio Setup
 
 - Game development with C++ workload
 - Windows 10 SDK (10.0.19041.0)
 
-## GLUT header files
+----------
+
+## Configure Visual Studio Locally (standalone)
+
+Project Properties:
+
+- Debugging > Environment > PATH=%PATH%;$(ProjectDir)lib
+- VC++ Directories > Include Directories > $(ProjectDir)inc
+- VC++ Directories > Library Directories > $(ProjectDir)lib
+
+----------
+
+## Configure Visual Studio Globally
+
+The following is only necessary if you want to configure Visual Studio to use the files with other new projects (probably best not to do that for this course).
+
+Copy files to the following locations (if not already present):
+
+- `glut.h` to `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include\gl`
+- `glut32.lib` to `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86`
+- `glut.dll` and `glut32.dll` to `C:\Windows\SysWOW64`
+- `glut32.dll` to `C:\Windows\System32`
+
+
+Add `%HOME\lib` to `PATH` in Project Properties > Debugging > Environment
+
+```bash
+  PATH=%PATH%;%HOME%\lib
+```
+
+----------
+
+## [How to setup OpenGL with Visual Studio 2019 on Windows 10?](https://www.geeksforgeeks.org/how-to-setup-opengl-with-visual-studio-2019-on-windows-10/)
 
 Now download GLUT header file, the .LIB, and .DLL files all pre-compiled for Intel platforms: [glutdlls37beta.zip](https://www.opengl.org/resources/libraries/glut/glutdlls37beta.zip)
 
-## [How to setup OpenGL with Visual Studio 2019 on Windows 10?](https://www.geeksforgeeks.org/how-to-setup-opengl-with-visual-studio-2019-on-windows-10/)
+----------
 
 ## [Programming OpenGL in C/C++](https://www3.ntu.edu.sg/home/ehchua/programming/opengl/HowTo_OpenGL_C.html)
 
@@ -25,6 +65,8 @@ Alternative of GLUT includes SDL, ....
 
 4. OpenGL Extension Wrangler Library (GLEW): [GLEW](http://glew.sourceforge.net/) is a cross-platform open-source C/C++ extension loading library. GLEW provides efficient run-time mechanisms for determining which OpenGL extensions are supported on the target platform.
 
+----------
+
 ##  Installing VC++, OpenGL, GLU and GLUT
 
 1. Visual C++: Read "How to install Visual C++ Express". VC++ would be installed in "C:\Program Files\Microsoft Visual Studio 10.0\VC", with headers in sub-directory "include" and libraries in "lib".
@@ -33,9 +75,9 @@ Alternative of GLUT includes SDL, ....
 
 **The followings are used from the Windows SDK:**
 
-- gl.h, glu.h: header for OpenGL and GLU in directory "C:\Program Files\Microsoft SDKs\Windows\v7.0A\include\gl".
+- gl.h, glu.h: header for OpenGL and GLU in directory `C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\gl`.
 
-- opengl32.lib, glu32.lib: libraries for OpenGL and GLU in directory `C:\Program Files\Microsoft SDKs\Windows\v7.0A\lib`.
+- opengl32.lib, glu32.lib: libraries for OpenGL and GLU in directory `C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\um\x86`.
 
 - opengl32.dll, glu32.dll: dynamic link libraries for OpenGL and GLU in directory `C:\Windows\System32`. This directory is to be included in `PATH` environment variable.
 
@@ -43,23 +85,8 @@ If you use the VC++ IDE, the include-path and lib-path would have been set corre
 
 3. GLUT (OpenGL Utility Toolkit): Download Nate Robin's original Win32 port of [GLUT](http://www.xmission.com/~nate/glut.html) or [freeglut](http://freeglut.sourceforge.net). 
 
-Copy files from the following locations:
+These files should be included in the project, but you can also copy the following files from the following locations:
 
 - `glut.h` in `C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um`
 - `glut32.lib` in `C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\um\x86`
-
-Copy files to the following locations (if not already present):
-
-- `glut.h` to `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\include\gl`
-- `glut32.lib` to `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\VS\lib\x86`
-- `glut.dll` and `glut32.dll` to `C:\Windows\SysWOW64`
-- `glut32.dll` to `C:\Windows\System32`
-
-
-Add `%HOME\lib` to `PATH` in Project Properties > Debugging > Environment
-
-```bash
-  PATH=%PATH%;%HOME%\lib
-```
-
 

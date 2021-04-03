@@ -5,7 +5,7 @@
 #pragma once
 
 #include <windows.h> // must include this before GL/gl.h
-#include <GL/glut.h>  // GLUT includes glu.h and gl.h
+#include <gl/glut.h>  // GLUT includes glu.h and gl.h
 
 //#include <Windows.h>
 
