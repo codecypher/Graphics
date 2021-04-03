@@ -80,8 +80,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>$(ProjectDir)\xtensor\include;$(ProjectDir)\OpenBLAS-0.3.13-x64\include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(ProjectDir)\xtensor\lib\cmake\xtensor;$(ProjectDir)\OpenBLAS-0.3.13-x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)xtensor\include;$(ProjectDir)OpenBLAS-0.3.13-x64\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)xtensor\lib\cmake\xtensor;$(ProjectDir)OpenBLAS-0.3.13-x64;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>

@@ -1,4 +1,13 @@
-# Linear Algebra Review
+# Linear Algebra Starter Project
+
+This repo is a Visual Studio 2019 starter project using the xtensor, xtensor-blas, and OpenBLAS libraries.
+
+All the header, DLL, and lib files are local to the project.
+
+---------
+
+
+## Linear Algebra Review
 
 1. Be able to:
 
