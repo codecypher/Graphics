@@ -100,6 +100,7 @@ void display(void) {
     // Translate coordinates from World to Screen
     float x_ratio = (float(SCREEN_WIDTH) - 1.0) / (2.0 * WORLD_SIZE);   // 639 / 2000 = 0.3195
     float y_ratio = (float(SCREEN_HEIGHT) - 1.0) / (2.0 * WORLD_SIZE);  // 479 / 2000 = 0.2395
+
     for (int i = 0; i < 4; i++) {
         screen[i][0] = world[i][0] * x_ratio;
         screen[i][1] = world[i][1] * y_ratio;
