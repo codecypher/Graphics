@@ -1,5 +1,5 @@
 /*
- * LinearAlgebra.cpp: Test Boost Setup
+ * LinearAlgebra.cpp: Test xtensor setup
  */
 #include "framework.h"
 #include "LinearAlgebra.h"
@@ -78,7 +78,7 @@ int hello_xtensor() {
 
     xt::xarray<double> res = xt::pow(arr5, arr6);
 
-    std::cout << res << endl;
+    cout << res << endl;
 
     system("pause");
 
@@ -124,7 +124,7 @@ int xtensor_tutorial() {
     cout << x << endl;
 
     system("pause");
-    
+
     return 0;
 }
 
