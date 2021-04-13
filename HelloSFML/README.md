@@ -25,3 +25,9 @@ Add the path to DLLs (`<sfml-install-path>/bin`) to `PATH` in Project Properties
 
 ---------
 
+## SFML Tutorials
+
+- [SFML Tutorial](https://www.sfml-dev.org/download/sfml/2.5.1/)
+
+- [SFML Graphics Library: Quick Tutorial](https://www.geeksforgeeks.org/sfml-graphics-library-quick-tutorial/)
+
