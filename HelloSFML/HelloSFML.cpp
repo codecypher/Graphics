@@ -78,11 +78,13 @@ int main_square(int argc, char** argv) {
 }
 
 
-int hello_sfml() {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
+// Note that we are using the sf namespace.
+int main_sfml() {
+    sf::RenderWindow window(sf::VideoMode(640, 480), "SFML works!");
+    sf::CircleShape shape(200.f);
     shape.setFillColor(sf::Color::Green);
 
+    // run a loop as long as the window is open
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -102,6 +104,6 @@ int hello_sfml() {
 int main(int argc, char** argv) {
     ios::sync_with_stdio();  // notify compiler that both types of I/O will be used
     // main_square(argc, argv);
-    hello_sfml();
+    main_sfml();
 }
 

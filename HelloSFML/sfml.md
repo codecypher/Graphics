@@ -301,3 +301,10 @@ In any case, you can check what settings SFML actually used with the `getSetting
 
 Here is what a complete OpenGL program would look like with SFML:
 
+
+----------
+
+
+### Graphics module
+
+
