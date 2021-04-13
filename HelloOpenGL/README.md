@@ -34,8 +34,9 @@ Here is the source used by this repo:
 
 Project Properties:
 
-- C++ > General > Additional Include Directories
-- Linker > General > Additional Library Directories
+- C++ > General > Additional Include Directories > %HOME%\inc
+- Linker > General > Additional Library Directories > %HOME%\lib\x64;%HOME%\lib
+- Linker > Input > Additional Dependencies > freeglut.lib
 - Debugging > Environment > PATH=%PATH%;%HOME%\bin\x64;%HOME%\bin
 
 
