@@ -4,7 +4,23 @@ This repo is a Visual Studio 2019 starter project using OpenGL libraries (GL/GLU
 
 All the header, DLL, and lib files are local to the project.
 
+## freeglut (Prepackaged Releases)
+
+[freeglut](http://freeglut.sourceforge.net/index.php#download)
+
+The freeglut project does not support packaged versions of freeglut excepting, of course, the tarballs distributed here. However, various members of the community have put time and effort into providing source or binary rollups and we thank them for their efforts.
+
+Here is the source used by this repo:
+
+[Martin Payne's Windows binaries (MSVC and MinGW)](https://www.transmissionzero.co.uk/software/freeglut-devel/)
+
+1. Copy freeglut\bin folder to %HOME%\bin
+2. Copy freeglut\include folder to %HOME%\inc
+3. Copy freegult\lib folder to %HOME%\lib
+
+
 ----------
+
 
 ## Visual Studio Setup
 
@@ -12,6 +28,19 @@ All the header, DLL, and lib files are local to the project.
 - Windows 10 SDK (10.0.19041.0)
 
 ----------
+
+
+## Configure Visual Studio Locally (recommended)
+
+Project Properties:
+
+- C++ > General > Additional Include Directories
+- Linker > General > Additional Library Directories
+- Debugging > Environment > PATH=%PATH%;%HOME%\bin\x64;%HOME%\bin
+
+
+----------
+
 
 ## Configure Visual Studio Locally (standalone)
 
@@ -21,7 +50,9 @@ Project Properties:
 - VC++ Directories > Include Directories > $(ProjectDir)inc
 - VC++ Directories > Library Directories > $(ProjectDir)lib
 
+
 ----------
+
 
 ## Configure Visual Studio Globally
 
@@ -35,7 +66,7 @@ Copy files to the following locations (if not already present):
 - `glut32.dll` to `C:\Windows\System32`
 
 
-Add `%HOME\lib` to `PATH` in Project Properties > Debugging > Environment
+Add `%HOME%\lib` to `PATH` in Project Properties > Debugging > Environment
 
 ```bash
   PATH=%PATH%;%HOME%\lib
@@ -89,4 +120,7 @@ These files should be included in the project, but you can also copy the followi
 
 - `glut.h` in `C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um`
 - `glut32.lib` in `C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\um\x86`
+
+----------
+
 

@@ -39,7 +39,6 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <None Include="mp1.md" />
     <None Include="README.md" />
   </ItemGroup>
 </Project>
