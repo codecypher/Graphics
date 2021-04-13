@@ -2,10 +2,9 @@
 
 This repo is a Visual Studio 2019 starter project using the xtensor, xtensor-blas, and OpenBLAS libraries.
 
-All the header, DLL, and lib files are local to the project.
+Moved files to home directory.
 
 ---------
-
 
 ## Linear Algebra Review
 
@@ -47,8 +46,17 @@ All the header, DLL, and lib files are local to the project.
 
 [How to use OpenBLAS in Microsoft Visual Studio](https://github.com/xianyi/OpenBLAS/wiki/How-to-use-OpenBLAS-in-Microsoft-Visual-Studio)
 
-Add `%HOME\lib` to `PATH` in Project Properties > Debugging > Environment
+Moved files to home directory:
 
-```bash
-  PATH=%PATH%;%HOME%\lib
-```
+1. Copy OpenBLAS-0.3.13-x64\bin folder to %HOME%\bin\x64
+2. Copy OpenBLAS-0.3.13-x64\include folder to %HOME%\inc
+3. Copy OpenBLAS-0.3.13-x64\lib folder to %HOME%\lib\x64
+
+
+Project Properties:
+
+- C++ > General > Additional Include Directories > %HOME%\xtensor\include;%HOME%\inc;
+- Linker > General > Additional Library Directories > %HOME%\xtensor\lib\cmake;%HOME%\lib\x64;%HOME%\bin\x64;
+- Linker > Input > Additional Dependencies > libopenblas.dll.a
+- Debugging > Environment > PATH=%PATH%;%HOME%\bin\x64;%HOME%\bin
+
