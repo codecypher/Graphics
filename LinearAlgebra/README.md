@@ -48,7 +48,7 @@ Moved files to home directory.
 
 Moved files to home directory:
 
-1. Copy OpenBLAS-0.3.13-x64\bin folder to %HOME%\bin\x64
+1. Copy OpenBLAS-0.3.13-x64\bin folder to %HOME%\lib\x64
 2. Copy OpenBLAS-0.3.13-x64\include folder to %HOME%\inc
 3. Copy OpenBLAS-0.3.13-x64\lib folder to %HOME%\lib\x64
 
@@ -56,7 +56,7 @@ Moved files to home directory:
 Project Properties:
 
 - C++ > General > Additional Include Directories > %HOME%\xtensor\include;%HOME%\inc;
-- Linker > General > Additional Library Directories > %HOME%\xtensor\lib\cmake;%HOME%\lib\x64;%HOME%\bin\x64;
+- Linker > General > Additional Library Directories > %HOME%\xtensor\lib\cmake;%HOME%\lib\x64;
 - Linker > Input > Additional Dependencies > libopenblas.dll.a
-- Debugging > Environment > PATH=%PATH%;%HOME%\bin\x64;%HOME%\bin
+- Debugging > Environment > PATH=%PATH%;%HOME%\lib\x64;
 
