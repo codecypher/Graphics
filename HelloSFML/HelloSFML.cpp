@@ -84,7 +84,7 @@ int main_sfml() {
     sf::CircleShape shape(200.f);
     shape.setFillColor(sf::Color::Green);
 
-    // run a loop as long as the window is open
+    // start the game loop (as long as the window is open)
     while (window.isOpen()) {
         sf::Event event;
         while (window.pollEvent(event)) {
@@ -92,9 +92,9 @@ int main_sfml() {
                 window.close();
         }
 
-        window.clear();
-        window.draw(shape);
-        window.display();
+        window.clear();      // clear the screen
+        window.draw(shape);  // draw the shape
+        window.display();    // update the window
     }
 
     return 0;
@@ -103,7 +103,7 @@ int main_sfml() {
 
 int main(int argc, char** argv) {
     ios::sync_with_stdio();  // notify compiler that both types of I/O will be used
-    // main_square(argc, argv);
-    main_sfml();
+    main_square(argc, argv);
+    //main_sfml();
 }
 
