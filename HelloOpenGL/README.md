@@ -14,7 +14,7 @@ Here is the source used by this repo:
 
 [Martin Payne's Windows binaries (MSVC and MinGW)](https://www.transmissionzero.co.uk/software/freeglut-devel/)
 
-1. Copy freeglut\bin folder to `%HOME%\dll\x86` and  `%HOME%\dll\x64`
+1. Copy freeglut\bin folder to `%HOME%\lib\x86` and  `%HOME%\lib\x64`
 2. Copy freeglut\include folder to `%HOME%\inc`
 3. Copy freegult\lib folder to `%HOME%\lib\x86` and `%HOME%\lib\x64`
 

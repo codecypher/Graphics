@@ -4,10 +4,9 @@
 
 #pragma once
 
-#include <windows.h>  // must include this before GL/gl.h
-#include <GL/glut.h>  // GLUT includes glu.h and gl.h
-
-//#include <Windows.h>
+#include <Windows.h>		// must include this before GL/gl.h
+#include <GL/freeglut.h>	// GLUT includes glu.h and gl.h
+//#include <GL/glut.h>		// GLUT includes glu.h and gl.h
 
 // C++ header files
 #include <string>
