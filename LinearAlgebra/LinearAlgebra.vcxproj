@@ -98,7 +98,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>libopenblas.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%HOME%\xtensor\lib\cmake;%HOME%\lib;%HOME%\bin</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%HOME%\xtensor\lib\cmake;%HOME%\lib\x86;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -123,13 +123,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>%HOME%\xtensor\include;%HOME%\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%HOME%\xtensor\include;%HOME%\inc;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>libopenblas.dll.a;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>%HOME%\xtensor\lib\cmake;%HOME%\lib\x64;%HOME%\dll\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%HOME%\xtensor\lib\cmake;%HOME%\lib\x64;</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
