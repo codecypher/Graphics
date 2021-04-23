@@ -1,13 +1,16 @@
 # Visual Studio 2019 starter projects
 
-## OpenGL Starter Project
+## [OpenGL Starter Project](./HelloOpenGL)
 
 This repo is a Visual Studio 2019 starter project using OpenGL libraries (GL/GLU/GLUT) including glutdlls37beta.
 
-All the header, DLL, and lib files are local to the project.
 
-## Linear Algebra Starter Project
+## [Linear Algebra Starter Project](./LinearAlgebra)
 
 This repo is a Visual Studio 2019 starter project using the xtensor, xtensor-blas, and OpenBLAS libraries.
 
-All the header, DLL, and lib files are local to the project.
+
+## [GDI+ Starter Project](./LinearAlgebra)
+
+This repo is a Visual Studio 2019 starter project using GDI+.
+
