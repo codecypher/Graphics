@@ -19,7 +19,6 @@ Moved files to home directory.
 
 2. Write C++ code to accomplish the above Linear Algebra functions.
 
-
 Project Properties:
 
 - C++ > General > Additional Include Directories > `%HOME%\xtensor\include;%HOME%\inc;`
@@ -56,8 +55,8 @@ Project Properties:
 
 Moved files to home directory:
 
-1. Copy OpenBLAS-0.3.13-x64\bin folder to `%HOME%\lib\x64`
-2. Copy OpenBLAS-0.3.13-x64\include folder to `%HOME%\inc`
-3. Copy OpenBLAS-0.3.13-x64\lib folder to `%HOME%\lib\x64`
+1. Copy OpenBLAS-0.3.13-x64\bin folder to %HOME%\lib\x64
+2. Copy OpenBLAS-0.3.13-x64\include folder to %HOME%\inc
+3. Copy OpenBLAS-0.3.13-x64\lib folder to %HOME%\lib\x64
 
 

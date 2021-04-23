@@ -4,22 +4,6 @@
 #include "framework.h"
 #include "LinearAlgebra.h"
 
-#include <iostream>
-
-#include "xtensor-blas/xlinalg.hpp"
-
-//#include <xtensor/xarray.hpp>
-//#include <xtensor/xio.hpp>
-//#include <xtensor/xview.hpp>
-
-using namespace std;
-
-// Global Variables
-const int WORLD_SIZE = 1000;
-const int SCREEN_WIDTH = 640;
-const int SCREEN_HEIGHT = 480;
-const float SCALE_FACTOR = 0.015f;
-const int MAX = 100;
 
 /**
  * Linear Algebra In C++ With XTensor Is Just Like Numpy
@@ -38,7 +22,7 @@ int hello_xtensor() {
     // sum of second row of 2-dimensional array and 1-dimensional array.
     xt::xarray<double> sum = xt::view(arr1, 1) + arr2;
 
-    cout << sum << endl;
+    std::cout << sum << std::endl;
 
     //
     // Second example: reshape
@@ -48,7 +32,7 @@ int hello_xtensor() {
 
     arr.reshape({3, 3});
 
-    cout << arr << endl;
+    std::cout << arr << std::endl;
 
     //
     // Third example: index access
@@ -58,12 +42,12 @@ int hello_xtensor() {
      {2.0, 5.0, 7.0},
      {2.0, 5.0, 7.0} };
 
-    cout << arr3(0, 0) << endl;
+    std::cout << arr3(0, 0) << std::endl;
 
     xt::xarray<int> arr4
     { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 
-    cout << arr4(0) << endl;
+    std::cout << arr4(0) << std::endl;
 
     //
     // Fourth example: broadcasting
@@ -78,7 +62,7 @@ int hello_xtensor() {
 
     xt::xarray<double> res = xt::pow(arr5, arr6);
 
-    cout << res << endl;
+    std::cout << res << std::endl;
 
     system("pause");
 
@@ -91,7 +75,7 @@ int xtensor_tutorial() {
     // the dimensions of the matrix will be mutable.
     xt::xarray<int>array
     ({ {500, 500, 300}, {500, 600, 800} });
-    cout << array << endl;
+    std::cout << array << std::endl;
 
     // We can reshape our new array
     array.reshape({ 3, 2 });
@@ -101,7 +85,7 @@ int xtensor_tutorial() {
 
     // We can also index our arrays the same way we would with Numpy,
     // but parenthesis are used to call indexes rather than brackets.
-    cout << array(0, 2) << endl;
+    std::cout << array(0, 2) << std::endl;
 
 
     xt::xarray<int>array1
@@ -116,12 +100,12 @@ int xtensor_tutorial() {
 
     // Concatenate it to the first array
     auto concat = xt::concatenate(xtuple(array, array2));
-    cout << concat << endl;
+    std::cout << concat << std::endl;
 
     // We have access to linear algebraic operations such as dot,
     // but we need to access the linalg name-space.
     auto x = xt::linalg::dot(array1, array2);
-    cout << x << endl;
+    std::cout << x << std::endl;
 
     system("pause");
 
@@ -137,7 +121,7 @@ int la_review() {
 
     // find the dot product
     auto x = xt::linalg::dot(xt::transpose(u), v);
-    cout << x << endl;
+    std::cout << x << std::endl;
 
     // add two matrices
     xt::xarray<int>A
@@ -145,10 +129,10 @@ int la_review() {
     xt::xarray<int>B
     ({ {1, 1, 1}, {3, 5, 7} });
 
-    cout << A + B << endl;
+    std::cout << A + B << std::endl;
 
     // multiply by scalar
-    cout << 2 * B << endl;
+    std::cout << 2 * B << std::endl;
 
     // multiply two matrices
     xt::xarray<int>C
@@ -158,15 +142,15 @@ int la_review() {
 
     auto res1 = xt::linalg::dot(C, D);
 
-    cout << res1 << endl;
+    std::cout << res1 << std::endl;
 
     // describe the identity matrix
     auto I = xt::eye<int>(3);
 
-    cout << I << endl;
+    std::cout << I << std::endl;
 
     // find the transpose of a matrix
-    cout << xt::transpose(C) << endl;
+    std::cout << xt::transpose(C) << std::endl;
 
     // find the determinant of a matrix
     xt::xarray<double>a
@@ -174,7 +158,7 @@ int la_review() {
 
     auto d = xt::linalg::det(a);
 
-    cout << d << endl;
+    std::cout << d << std::endl;
 
     // find the inverse of a matrix
     xt::xarray<double>b
@@ -182,7 +166,7 @@ int la_review() {
 
     auto ainv = xt::linalg::inv(b);
 
-    cout << ainv << endl;
+    std::cout << ainv << std::endl;
 
     system("pause");
 
@@ -191,9 +175,9 @@ int la_review() {
 
 
 int main(int argc, char** argv) {
-    ios::sync_with_stdio();  // notify compiler that both types of I/O will be used
+    std::ios::sync_with_stdio();  // notify compiler that both types of I/O will be used
 
-    cout << "Hello, Jeff!" << endl;
+    std::cout << "Hello, Jeff!" << std::endl;
 
     //hello_boost();
     //hello_xtensor();
