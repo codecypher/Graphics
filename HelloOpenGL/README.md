@@ -2,8 +2,6 @@
 
 This repo is a Visual Studio 2019 starter project using OpenGL libraries (GL/GLU/GLUT) including glutdlls37beta.
 
-All the header, DLL, and lib files are local to the project.
-
 ## freeglut (Prepackaged Releases)
 
 [freeglut](http://freeglut.sourceforge.net/index.php#download)

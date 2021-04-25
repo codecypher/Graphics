@@ -2,9 +2,11 @@
 
 This repo is a Visual Studio 2019 starter project using the xtensor, xtensor-blas, and OpenBLAS libraries.
 
-Moved files to home directory.
+Moved dependencies to `%HOME%\xtensor`.
+
 
 ---------
+
 
 ## Linear Algebra Review
 

@@ -14,3 +14,7 @@ This repo is a Visual Studio 2019 starter project using the xtensor, xtensor-bla
 
 This repo is a Visual Studio 2019 starter project using GDI+.
 
+## [Xcode Starter Project](./XOpenGL)
+
+This repo is an Xcode starter project using the OpenGL libraries on macOS.
+
