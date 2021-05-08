@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18B2442926350DDB001B5722 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 18B2442826350DDB001B5722 /* main.c */; };
-		18B2443726350EDE001B5722 /* ex6.c in Sources */ = {isa = PBXBuildFile; fileRef = 18B2443626350EDE001B5722 /* ex6.c */; };
+		18F3F981263645AD00B1C4DC /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F97E263645AD00B1C4DC /* main.c */; };
+		18F3F982263645AD00B1C4DC /* ex6.c in Sources */ = {isa = PBXBuildFile; fileRef = 18F3F97F263645AD00B1C4DC /* ex6.c */; };
+		18F3F986263645D800B1C4DC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F985263645D800B1C4DC /* OpenGL.framework */; };
+		18F3F988263645DE00B1C4DC /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F3F987263645DE00B1C4DC /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +27,11 @@
 
 /* Begin PBXFileReference section */
 		18B2442526350DDB001B5722 /* XOpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = XOpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
-		18B2442826350DDB001B5722 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		18B2443526350EDE001B5722 /* ex6.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ex6.h; sourceTree = "<group>"; };
-		18B2443626350EDE001B5722 /* ex6.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ex6.c; sourceTree = "<group>"; };
+		18F3F97C263645AD00B1C4DC /* ex6.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ex6.h; path = XOpenGL/ex6.h; sourceTree = "<group>"; };
+		18F3F97E263645AD00B1C4DC /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = XOpenGL/main.c; sourceTree = "<group>"; };
+		18F3F97F263645AD00B1C4DC /* ex6.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ex6.c; path = XOpenGL/ex6.c; sourceTree = "<group>"; };
+		18F3F985263645D800B1C4DC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		18F3F987263645DE00B1C4DC /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F3F988263645DE00B1C4DC /* GLUT.framework in Frameworks */,
+				18F3F986263645D800B1C4DC /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +52,7 @@
 			children = (
 				18B2442726350DDB001B5722 /* XOpenGL */,
 				18B2442626350DDB001B5722 /* Products */,
+				18F3F984263645D800B1C4DC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +67,20 @@
 		18B2442726350DDB001B5722 /* XOpenGL */ = {
 			isa = PBXGroup;
 			children = (
-				18B2442826350DDB001B5722 /* main.c */,
-				18B2443526350EDE001B5722 /* ex6.h */,
-				18B2443626350EDE001B5722 /* ex6.c */,
+				18F3F97F263645AD00B1C4DC /* ex6.c */,
+				18F3F97C263645AD00B1C4DC /* ex6.h */,
+				18F3F97E263645AD00B1C4DC /* main.c */,
 			);
 			name = XOpenGL;
+			sourceTree = "<group>";
+		};
+		18F3F984263645D800B1C4DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18F3F987263645DE00B1C4DC /* GLUT.framework */,
+				18F3F985263645D800B1C4DC /* OpenGL.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B2442926350DDB001B5722 /* main.c in Sources */,
-				18B2443726350EDE001B5722 /* ex6.c in Sources */,
+				18F3F982263645AD00B1C4DC /* ex6.c in Sources */,
+				18F3F981263645AD00B1C4DC /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +162,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -177,6 +193,7 @@
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -205,7 +222,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -230,6 +247,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;

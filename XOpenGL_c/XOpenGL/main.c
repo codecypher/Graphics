@@ -6,6 +6,7 @@
 //
 
 #include <stdio.h>
+
 #include "ex6.h"
 
 int main(int argc, char **argv) {

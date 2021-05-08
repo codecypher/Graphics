@@ -1,7 +1,3 @@
-/*
- * ex6.c
- * Example 6: A rotating cube
- */
 #include "ex6.h"
 
 GLfloat angle= 0.0;
@@ -15,12 +11,15 @@ void spin (void) {
 void display(void) {
     glClear(GL_COLOR_BUFFER_BIT);   // Clear the window
     glLoadIdentity ();
-    gluLookAt (0.0, 0.0, 0.5, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+    gluLookAt (0.0, 0.0, 0.5,
+               0.0, 0.0, 0.0,
+               0.0, 1.0, 0.0);
     glRotatef(angle, 1, 0, 0);
     glRotatef(angle, 0, 1, 0);
     glRotatef(angle, 0, 0, 1);
     glutWireCube(2.0);
-    glFlush();                     // Force update of screen
+//    glFlush();        // Force update of screen
+    glutSwapBuffers();  // Double-buffering
 }
 
 // Called when a key is pressed*
@@ -41,7 +40,8 @@ int main_ex6(int argc, char** argv) {
     glutInit(&argc, argv);              // Initialise OpenGL
     glutInitWindowSize (500, 500);      // Set the window size
     glutInitWindowPosition (100, 100);  // Set the window position
-    glutCreateWindow("ex6: A rotating cube");            // Create the window
+    glutInitDisplayMode (GLUT_DOUBLE);
+    glutCreateWindow("ex6");            // Create the window
     glutDisplayFunc(display);           // Register the "display" function
     glutReshapeFunc(reshape);           // Register the "reshape" function
     glutKeyboardFunc(keyboard);         // Register the "keyboard" function
