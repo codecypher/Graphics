@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HelloSDL.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureBank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Stringify.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson02.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson03.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson05.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson06.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson07.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson08.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson09.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson10.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson04.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LTimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LDot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson12.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson13.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson14.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson15.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson17.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson18.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson22.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson23.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson24.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson26.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson27.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson28.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson30.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson29.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson33.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lesson35.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HelloSDL.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureBank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Stringify.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson02.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson03.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson05.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson04.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson06.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson07.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson08.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson09.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson10.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LTexture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LTimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LDot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson11.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson13.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson14.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson15.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson16.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson17.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson18.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson22.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson23.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson24.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson26.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson27.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson28.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson30.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson29.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LCircle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson33.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lesson35.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
